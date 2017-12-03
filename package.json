@@ -1,0 +1,19 @@
+{
+  "name": "patchavatar-raw",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dominictarr/patchavatar-raw",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/patchavatar-raw.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "MIT"  
+}
