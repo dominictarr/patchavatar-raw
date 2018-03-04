@@ -16,11 +16,11 @@ exports.create = function (api) {
   var cache = {}
   return {
     avatar: {
-      image: function (id) {
-        if(cache[id]) return h('img', {src: cache[id]})
+      image: function (id, onImage) {
+        if(cache[id]) return onImage(cache[id])
         var img = visualize(new Buffer(id.substring(1), 'base64'), 32)
         cache[id] = img.src
-        return img
+        return onImage(cache[id])
       },
       name: function (id) {
         return id.substring(0, 10)
